@@ -30,7 +30,7 @@
 		<t t-jquery="div.oe_login_footer" t-operation="replace">
 			<div class="oe_login_footer">
 				<a href="#" class="oe_login_manage_db">Manage Databases</a>
-				<a href="http://www.openerp.com" target="_blank">
+				<a href="http://www.occto.com.br" target="_blank">
 					Powered by
 					<span>OCCTO</span>
 				</a>

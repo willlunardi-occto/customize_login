@@ -1,0 +1,34 @@
+<templates>
+	<!-- Templates modified at the web start, before loading of a database. -->
+
+	<!-- Remoea o link Gerenciar banco de dados. Atera link Powered by.-->
+	<t t-extend="Login">
+		<t t-jquery="div.oe_login_logo" t-operation="replace">
+			<div class="oe_login_logo">
+				<img src='/customize_login/static/src/img/logo.png'/>
+			</div>
+		</t>
+		<t t-jquery="ul" t-operation="replace">
+			<p>
+				<label>Usuário:  </label>
+				<input name="login" type="text" value="usuario@dominio" autofocus="autofocus"/>
+			</p>
+			<p>
+				<label>Senha:  </label>
+				<input name="password" type="password" value=""/>
+			</p>
+			<p>
+				<button name="submit">Log in</button>
+			</p>
+		</t>
+				<t t-jquery="div.oe_login_footer" t-operation="replace">
+			<div class="oe_login_footer">
+				<a href="#" class="oe_login_manage_db">Manage Databases</a>
+				<a href="http://www.openerp.com" target="_blank">
+					Powered by
+					<span>OCCTO</span>
+				</a>
+			</div>
+		</t>
+	</t>
+</templates>
